@@ -42,3 +42,5 @@ The article is based on the the following
 9. Click on `Manage` tab.
 
 The Similar incidents  training definition is displayed.
+
+![ServiceNow](./images/image-00008.png)
