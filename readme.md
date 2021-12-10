@@ -1,10 +1,17 @@
-# Watson AIOps 3.2.0  Demo Setup
+# Watson AIOps 3.2.0 Demo Setup with iLender Application
 
-This article explains about Watson AIOps 3.2.0 demo setup.
+This article explains about Watson AIOps 3.2.0 demo setup with iLender Application.
 
 The article is based on the the following
  - RedHat OpenShift 4.8 on IBM Cloud (ROKS)
  - Watson AIOps 3.2.0
+
+
+### Architecture
+
+Here is the architecture that we are going to implement.
+
+<img src="images/image-00005.png">
 
 ### 1. Watson AIOps 3.2 Installation
 
