@@ -11,7 +11,7 @@ The article is based on the the following
 
 Here is the architecture that we are going to implement.
 
-<img src="images/image-00005.png">
+<img src="images/architecture.png">
 
 ### 1. Watson AIOps 3.2 Installation
 
