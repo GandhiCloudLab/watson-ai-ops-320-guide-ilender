@@ -1,69 +1,84 @@
-# Inferencing Inferencing Log Anomaly and Similar Incidents
+# Viewing Inferencing Results
 
-This article explains about how to do Inferencing of Log Amomaly Detection and Similar incident service in Watson AIOps.
+This article explains about what and where to view Inferencing results.
 
 The article is based on the the following
 
-- RedHat OpenShift 4.6 on IBM Cloud (ROKS)
-- Watson AI-Ops 3.1.0
+- RedHat OpenShift 4.8 on IBM Cloud (ROKS)
+- Watson AI-Ops 3.2.0
 
-## Enable Data flow in Humio Integration
+## 1. Alert Viewer
 
-Choose the `Humio` integration from the `Data and Tool integrations` page.
+1. Alert Viewer shows all the alerts created for this probelm.
 
-<img src="images/1-humio-on-1.png">
+![Alert Viewer](./images/01-av-1.png)
 
-Click on the listed humio integation item.
+## 2. Slack Story
 
-<img src="images/1-humio-on-2.png">
+Slack story shows the incident details to SRE.
 
-Enable the `Data flow` on.
+1. Slack story for this probelm
 
-Select the `Live data for Continious AI Training and anomaly detection` option.
+![Slack Story](./images/02-story1.png)
 
-Click on `Save` button.
+2. Click on `Show More` to see the details.
 
-<img src="images/1-humio-on-3.png">
-<img src="images/1-humio-on-4.png">
+![Slack Story](./images/02-story2.png)
+![Slack Story](./images/02-story3.png)
+![Slack Story](./images/02-story4.png)
 
-## Induce Error
+3. Click on `View Alert Details` to see the alert details.
 
-The demo script is avialable [here](../800-demo-script). 
+![Slack Story](./images/02-story5.png)
 
-Run `sh 01-demo.sh` to start the demo.
+4. Click on `View Alerts` to see the alerts.
 
-You will see the menu options like this.
+![Slack Story](./images/02-story6.png)
 
-<img src="images/2-induce-1.png">
+## 3. Application Management
 
-Enter `1` to choose the menu option `1  -  Introduce anomaly into BookInfo App`
+In application management also the story is shown.
 
-The output of the option 1 would be like the below.
+1. Application tiles showing the alerts
 
-<img src="images/2-induce-2.png">
+![App](./images/03-app1.png)
 
-This demo option will scale down the ratings pod to 0, push  2 error events to event manager. It will also access the bookinfo application through script. As a result, the log anomaly is created, grouped with events alerts and story will be created in the slack.  
+2. Click on `View Details` to see the details.
 
-## Stories in Application
+![App](./images/03-app2.png)
 
-By sucessful execution of the above demo step, the story would have been created and it would be displayed in the Application page. 
+You can see the story and topology.
 
-The topology is also updated with error events. 
+3. Click on `Hand icon` to see the alerts.
 
-<img src="images/3-app-1.png">
-<img src="images/3-app-2.png">
-<img src="images/3-app-3.png">
+![App](./images/03-app3.png)
 
-#### Stories in detail
+4. Click on `View Story` to see the story viewer.
 
-You can click and view the story details from the Application details page.
+## 4. Story Viewer
 
-<img src="images/3-app-4.png">
-<img src="images/3-app-5.png">
+1. Story Viewer shows story and its events in web.
 
-## Stories in Slack
+![Story Viewer](./images/04-sv1.png)
 
-The same stories are displayed in the slack as well, as we have integrated the slack as a chatops in the AIOps integration page.
+2. Click on `Topology Icon` to see Grouping.
 
-<img src="images/4-story-1.png">
-<img src="images/4-story-2.png">
+3. Click on  `Seasonal Grouping Icon` to see Grouping.
+
+![Story Viewer](./images/04-sv2.png)
+![Story Viewer](./images/04-sv3.png)
+
+3. Click on  `Topology` tab to see Topology.
+
+![Story Viewer](./images/04-sv4.png)
+
+
+## 5. Resolving Incident
+
+1. Click on  `Mark As Resolved` button in Slack Story
+
+![Slack Story](./images/05-close1.png)
+
+2. Click on  `Submit` button in resolve the Slack Story
+
+![Slack Story](./images/05-close2.png)

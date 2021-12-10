@@ -1,84 +1,44 @@
-# Viewing Inferencing Results
+# Run Inferencing Demo
 
-This article explains about what and where to view Inferencing results.
+This article explains about how to run the Inferencing demo in Watson AIOps.
 
 The article is based on the the following
 
 - RedHat OpenShift 4.8 on IBM Cloud (ROKS)
 - Watson AI-Ops 3.2.0
 
-## 1. Alert Viewer
+## 1. Enable Data flow in ServiceNow Integration
 
-1. Alert Viewer shows all the alerts created for this probelm.
+1. Choose the `ServiceNow` integration from the `Data and Tool integrations` page.
 
-![Alert Viewer](./images/01-av-1.png)
+![ServiceNow Integration](./images/image2.png)
 
-## 2. Slack Story
+2. Enable the `Data flow` on.
 
-Slack story shows the incident details to SRE.
+3. Select the option `Live data for Continious ticket data collection`.
 
-1. Slack story for this probelm
+4. Save it.
 
-![Slack Story](./images/02-story1.png)
+## 3. Run Demo Script
 
-2. Click on `Show More` to see the details.
+The demo script is avialable [here](../10-demo-script). 
 
-![Slack Story](./images/02-story2.png)
-![Slack Story](./images/02-story3.png)
-![Slack Story](./images/02-story4.png)
+Run `sh 01-demo.sh` to start the demo.
 
-3. Click on `View Alert Details` to see the alert details.
+You will see the menu options like this.
 
-![Slack Story](./images/02-story5.png)
+![Menu](./images/image3.png)
 
-4. Click on `View Alerts` to see the alerts.
+Enter `1` to choose the menu option `1  -  Create Loan in iLender App`
 
-![Slack Story](./images/02-story6.png)
+The output of the option 1 would be like the below.
 
-## 3. Application Management
+![Menu](./images/image4.png)
 
-In application management also the story is shown.
+This demo option will introduce `out of memory error` in the creditscore service based on the increasing load. 
 
-1. Application tiles showing the alerts
+As a result, the log anomaly is created and story will be created in the slack.  
 
-![App](./images/03-app1.png)
+## Next Step
 
-2. Click on `View Details` to see the details.
-
-![App](./images/03-app2.png)
-
-You can see the story and topology.
-
-3. Click on `Hand icon` to see the alerts.
-
-![App](./images/03-app3.png)
-
-4. Click on `View Story` to see the story viewer.
-
-## 4. Story Viewer
-
-1. Story Viewer shows story and its events in web.
-
-![Story Viewer](./images/04-sv1.png)
-
-2. Click on `Topology Icon` to see Grouping.
-
-3. Click on  `Seasonal Grouping Icon` to see Grouping.
-
-![Story Viewer](./images/04-sv2.png)
-![Story Viewer](./images/04-sv3.png)
-
-3. Click on  `Topology` tab to see Topology.
-
-![Story Viewer](./images/04-sv4.png)
-
-
-## 5. Resolving Incident
-
-1. Click on  `Mark As Resolved` button in Slack Story
-
-![Slack Story](./images/05-close1.png)
-
-2. Click on  `Submit` button in resolve the Slack Story
-
-![Slack Story](./images/05-close2.png)
+By sucessful execution of the above demo step, the story would have been created and you can see them in the next section [30-view-results](../30-view-results).

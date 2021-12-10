@@ -276,7 +276,7 @@ The pages with the text `Page Status : Final` at the bottom indicates that the m
         <td>Prepare demo script to introduce log anomaly and ingest events</td>
         <td>
 
-[Details](./340-aiops-inferencing/40-demo-script-aimgr)
+[Details](./340-aiops-inferencing/10-demo-script)
         </td>
     </tr>
     <tr>
