@@ -58,7 +58,7 @@ The pages with the text `Page Status : Final` at the bottom indicates that the m
     <tr>
         <td>2.1</td>
         <td>Install Apache Benche </td>
-        <td>To create load on bookinfo app</td>
+        <td>To create load on the app</td>
         <td>
 
 [Details ...](https://httpd.apache.org/download.cgi)
@@ -233,7 +233,7 @@ The pages with the text `Page Status : Final` at the bottom indicates that the m
     <tr>
         <td>8.1</td>
         <td>Generate Load</td>
-        <td>Generate the load for the bookinfo app.</td>
+        <td>Generate the load for the app.</td>
         <td>
 
 [Details](./21-application-load-generation)

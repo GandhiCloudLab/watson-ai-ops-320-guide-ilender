@@ -1,9 +1,9 @@
-# Create Slack Account and Integrate in AI-Ops
+# Create Slack Account and Integrate in Watson AIOps
 
 The article is based on the the following
 
-- RedHat OpenShift 4.6 on IBM Cloud (ROKS)
-- Watson AI-Ops 3.1.0
+- RedHat OpenShift 4.8 on IBM Cloud (ROKS)
+- Watson AI-Ops 3.2.0
 
 #### Steps
 
@@ -146,65 +146,65 @@ Do the same for both the channels.
 
 ## 4. Integrate Slack in AI-Ops
 
-In the AI-Ops console, click on `View All` in integration section.
+1. In the AI-Ops console, click on `Data and Tools integration` in home page.
 
-<img src="images/image-00036.png">
+<img src="images/image-00034.png">
 
-Click on `Add Integration` in Slack.
+2. Click on `Add Connection`.
 
-<img src="images/image-00037.png">
+<img src="images/image-00035.png">
 
-Enter some  `Name`.
+3. Enter some  `Name`.
 
-Enter the below fields that we copied above
+4. Enter the below fields that we copied above
 
 - Signing Secret
 - Bot Token
 - Proactive Channel
 - Reactive Channel
 
-Do the `Test Connection`
+5. Do the `Test Connection`
 
-Click on `Integrate` button.
+6. Click on `Save` button.
+
+<img src="images/image-00036.png">
+<img src="images/image-00037.png">
+
+7. See the Slack integration created below
+
+8. Click on the `Slack` link
 
 <img src="images/image-00038.png">
-<img src="images/image-00040.png">
 
-See the Slack integration created below
+9. Copy the slack url
 
-Click on the `1 Integration` link
-
-<img src="images/image-00041.png">
-
-Copy the slack url
-
-<img src="images/image-00042.png">
+<img src="images/image-00039.png">
 
 
 ## 5. Update Nginx Certificate
 
 1. Login into AIOps installed cluster using `oc login ...` command .
 
-2. Goto the AIOps installed namespace`
+2. Goto the AIOps installed namespace
 
 ```
 oc project cp4waiops
 ```
 
-3. There is a script file [update-nginx-v310.sh](./files/update-nginx-v310.sh)
+3. There is a script file [update-nginx-v320.sh](./files/update-nginx-v320.sh)
 
 Run the script.
 
 ```
-sh files/update-nginx-v310.sh
+sh files/update-nginx-v320.sh
 ```
 
 This will update the nginx certificate.
 
-Note: The same script is also available in  https://pages.github.ibm.com/up-and-running/watson-aiops/AI_Manager/Installation/#ngnix-certificate-for-v31
+Note: The similar script is also available in  https://pages.github.ibm.com/up-and-running/watson-aiops/AI_Manager/Installation/#ngnix-certificate-for-v31
 
 
-## 6. Integrate AI-Ops in Slack
+## 6. Integrate WAIOps in Slack
 
 Click on `Event Subscription` from the left menu
 

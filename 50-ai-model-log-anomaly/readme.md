@@ -37,7 +37,7 @@ The article is based on the the following
 - Start Date: Yesterday date
 - End Date: Tomorrow date
 
-(Whiel trianing, we will go for live logs, that will fall under this date range)
+(Whiel training, we will go for live logs and the date of the live logs should fall under this date range)
 
 5. Click on `Next` 
 
