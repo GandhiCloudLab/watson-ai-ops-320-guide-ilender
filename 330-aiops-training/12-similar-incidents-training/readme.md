@@ -16,7 +16,7 @@ Atleast 5 incidents should have been created in service-now, resolved with prope
 
 Here are the sample incidents from service now.
 
-<img src="images/service-now.png">
+![ServiceNow](./images/image-00000.png)
 
 You can refer to the document to create these incidents in sevice now. https://github.com/ibm-gsi-ecosystem/watson-ai-ops-snow/tree/main/01-snow-incidents
 
