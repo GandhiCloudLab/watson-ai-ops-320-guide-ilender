@@ -9,44 +9,12 @@ The article is based on the the following
 
 ### Architecture
 
-Here is the architecture that we are going to implement.
+Here is the architecture that we are going to setup.    
 
 <img src="images/architecture.png">
 
-### 1. Watson AIOps 3.2 Installation
 
-<table>
-    <tr>
-        <td width="4%">S.No</td>
-        <td width="84%">Title</td>
-        <td width="12%">Reference</td>
-    </tr>
-    <tr>
-        <td>1.1</td>
-        <td>Prerequisites to install Watson AIOps</td>
-        <td>
-
-[Details ...](./01-install-prerequisite)
-        </td>
-    </tr>
-        <tr>
-        <td>1.2</td>
-        <td>Updating Global Pull Secrets before installing WAIOps 3.2</td>
-        <td>
-[Details ...](./02-install-ai-manager-update-global-pull-secrets)
-        </td>
-    </tr>
-    <tr>
-        <td>1.3</td>
-        <td>Installing Watson AIOps AI-Manager on ROKS</td>
-        <td>
-[Details ...](./03-install-ai-manager)
-        </td>
-    </tr>
-
-</table>
-
-### 2. Pre-requisites on User Laptop  / client linux VM
+### 1. Pre-requisites on User Laptop  / client linux VM
 
 <table>
     <tr>
@@ -74,6 +42,40 @@ Here is the architecture that we are going to implement.
 </table>
 
 
+### 2. Watson AIOps 3.2 Installation
+
+<table>
+    <tr>
+        <td width="4%">S.No</td>
+        <td width="84%">Title</td>
+        <td width="12%">Reference</td>
+    </tr>
+    <tr>
+        <td>1.1</td>
+        <td>Watson AIOps 3.2.0 Installation and demo setup requirements</td>
+        <td>
+
+[Details ...](./01-install-prerequisite)
+        </td>
+    </tr>
+        <tr>
+        <td>1.2</td>
+        <td>Updating Global Pull Secrets before installing WAIOps 3.2</td>
+        <td>
+[Details ...](./02-install-ai-manager-update-global-pull-secrets)
+        </td>
+    </tr>
+    <tr>
+        <td>1.3</td>
+        <td>Installing Watson AIOps AI-Manager on ROKS</td>
+        <td>
+[Details ...](./03-install-ai-manager)
+        </td>
+    </tr>
+
+</table>
+
+
 ### 3. Setup Managed Environment
 
 <table>
@@ -85,11 +87,11 @@ Here is the architecture that we are going to implement.
     </tr>
     <tr>
         <td>3.1</td>
-        <td>Install Bookinfo app</td>
-        <td>Install Bookinfo app on the managed environment</td>
+        <td>Install iLender app</td>
+        <td>Install iLender app on the managed environment</td>
         <td>
 
-[Details](./20-application-installation/01-iks)</td>
+[Details](./20-application-installation)</td>
     </tr>
 </table>
 
@@ -135,7 +137,7 @@ Here is the architecture that we are going to implement.
     </tr>
 </table>
 
-### 5. Setup Initial Configurations in Watson AIOps 3.2.0
+### 5. Setup Initial Configurations
 <table>
     <tr>
         <td width="4%">S.No</td>
@@ -221,7 +223,7 @@ Here is the architecture that we are going to implement.
     </tr>    
 </table>
 
-### 8. Training AI-Types
+### 8. Training
 
 <table>
     <tr>
