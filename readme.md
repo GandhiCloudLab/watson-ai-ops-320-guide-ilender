@@ -26,21 +26,21 @@ The pages with the text `Page Status : Final` at the bottom indicates that the m
         <td>Prerequisites to install Watson AIOps</td>
         <td>
 
-[Details ...](./01-install-roks-iks-humio)
+[Details ...](./01-install-prerequisite)
         </td>
     </tr>
         <tr>
         <td>1.2</td>
         <td>Updating Global Pull Secrets before installing WAIOps 3.2</td>
         <td>
-[Details ...](./02-update-global-pull-secrets)
+[Details ...](./02-install-ai-manager-update-global-pull-secrets)
         </td>
     </tr>
     <tr>
         <td>1.3</td>
         <td>Installing Watson AIOps AI-Manager on ROKS</td>
         <td>
-[Details ...](./03-install-ai-manager-in-roks)
+[Details ...](./03-install-ai-manager)
         </td>
     </tr>
 
@@ -89,7 +89,7 @@ The pages with the text `Page Status : Final` at the bottom indicates that the m
         <td>Install Bookinfo app on the managed environment</td>
         <td>
 
-[Details](./500-install-bookinfo-app/01-iks)</td>
+[Details](./20-application-installation/01-iks)</td>
     </tr>
 </table>
 
@@ -114,31 +114,24 @@ The pages with the text `Page Status : Final` at the bottom indicates that the m
     </tr>   
     <tr>
         <td>4.2 </td>
-        <td>Install fluentbit</td>
-        <td>Push the bookinfo logs to Humio (using Fluent-bit data shipper)</td>
-        <td>Managed env</td>
-        <td>[Details](./510-configuring-fluentbit/01-iks)</td>
-    </tr>   
-    <tr>
-        <td>4.3 </td>
         <td>Create Slack acccount</td>
         <td>Setup free slack account and create workspace, channels and slack app</td>
         <td>Slack</td>
-        <td>[Details](./300-aiops-initial-configuration/13-slack-account-creation-and-integration)</td>
+        <td>[Details](./32-integrations-slack)</td>
     </tr>   
     <tr>
-        <td>4.4 </td>
+        <td>4.3 </td>
         <td>Create ServiceNow Instance</td>
         <td></td>
         <td>ServiceNow</td>
         <td>[Details ...](https://developer.servicenow.com/dev.do)</td>
     </tr>
     <tr>
-        <td>4.5 </td>
+        <td>4.4 </td>
         <td>Create Sample Incidents in Service now</td>
         <td></td>
         <td>ServiceNow</td>
-        <td>[Details](./330-aiops-training/12-similar-incidents-training#user-content-preparation)</td>
+        <td>[Details](https://github.com/ibm-gsi-ecosystem/watson-ai-ops-snow/tree/main/01-snow-incidents)</td>
     </tr>
 </table>
 
@@ -156,7 +149,7 @@ The pages with the text `Page Status : Final` at the bottom indicates that the m
         <td>Integrate with Slack collaboration platform. Need to copy nginx certificate as well.</td>
         <td>
 
-[Details](./300-aiops-initial-configuration/13-slack-account-creation-and-integration)
+[Details](./32-integrations-slack)
 </td>
     </tr>
     <tr>
@@ -165,14 +158,14 @@ The pages with the text `Page Status : Final` at the bottom indicates that the m
         <td>&nbsp;</td>
         <td> 
         
-[Details](./300-aiops-initial-configuration/10-setup-humio-Integration)</td>
+[Details](./30-integrations-humio)</td>
     </tr>
     <tr>
         <td>5.3</td>
         <td>Setup Servicenow Integration</td>
         <td>&nbsp;</td>
         <td>
-[Details](./300-aiops-initial-configuration/11-setup-servicenow-integration)
+[Details](./31-integrations-servicenow)
         </td>
     </tr>
     <tr>
@@ -180,7 +173,7 @@ The pages with the text `Page Status : Final` at the bottom indicates that the m
         <td>Setup Kubernetes Integration</td>
         <td>&nbsp;</td>
         <td>
-[Details](./10-setup-kubernetes-observer)
+[Details](./33-integrations-kubernetes-observer)
         </td>
     </tr>    
 </table>
@@ -195,10 +188,10 @@ The pages with the text `Page Status : Final` at the bottom indicates that the m
     </tr>
     <tr>
         <td>6.1</td>
-        <td>Create Application from App Group </td>
+        <td>Create Application from Resource Groups </td>
         <td>
 
-[Details](./20-create-application-from-resource-group)</td>
+[Details](./40-application-management)</td>
     </tr>
 </table>
 
@@ -215,7 +208,7 @@ The pages with the text `Page Status : Final` at the bottom indicates that the m
         <td>Create Training Definition for Log Anomaly Detection </td>
         <td>
 
-[Details](./30-ai-model-definition-log-anomaly)  
+[Details](./50-ai-model-log-anomaly)  
         </td>
     </tr>
     <tr>
@@ -223,7 +216,7 @@ The pages with the text `Page Status : Final` at the bottom indicates that the m
         <td>Create Training Definition for Similar Incidents </td>
         <td>
 
-[Details](./320-aiops-ai-model-management/12-create-training-definition-incidents)  
+[Details](./51-ai-model-similar-incidents)  
         </td>
     </tr>    
 </table>
@@ -243,20 +236,20 @@ The pages with the text `Page Status : Final` at the bottom indicates that the m
         <td>Generate the load for the bookinfo app.</td>
         <td>
 
-[Details](./501-bookinfo-load-generation)
+[Details](./21-application-load-generation)
         </td>
     </tr>    
     <tr>
         <td>8.2</td>
         <td>Log Anomaly Detection training </td>
         <td>Create load in app, enable Data flow on humio integration, selction the mode, start the Log Anomaly Detection training</td>
-        <td>[Details](./330-aiops-training/10-log-anomaly-detection-training)</td>
+        <td>[Details](./61-training-log-anomaly)</td>
     </tr>
     <tr>
         <td>8.4</td>
         <td>Similar Incidents training </td>
         <td>Enable Data flow on Servicenow integration, selction the mode, start the Similar Incidents training</td>
-        <td>[Details](./330-aiops-training/12-similar-incidents-training)</td>
+        <td>[Details](./62-training-similar-incidents)</td>
     </tr>    
 </table>
 
@@ -276,7 +269,7 @@ The pages with the text `Page Status : Final` at the bottom indicates that the m
         <td>Prepare demo script to introduce log anomaly and ingest events</td>
         <td>
 
-[Details](./340-aiops-inferencing/10-demo-script)
+[Details](./70-inferencing-demo-script)
         </td>
     </tr>
     <tr>
@@ -285,7 +278,7 @@ The pages with the text `Page Status : Final` at the bottom indicates that the m
         <td>Run the demo script to induce error in credtiscore service based on the load</td>
         <td>
 
-[Details](./340-aiops-inferencing/20-run-demo)
+[Details](./71-inferencing-run-demo)
         </td>
     </tr>
     <tr>
@@ -294,7 +287,7 @@ The pages with the text `Page Status : Final` at the bottom indicates that the m
         <td>Check the stories created by WA</td>
         <td>
 
-[Details](./340-aiops-inferencing/30-view-results)
+[Details](./72-inferencing-view-results)
         </td>
     </tr>
 </table>
