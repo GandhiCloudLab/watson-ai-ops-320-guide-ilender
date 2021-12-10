@@ -23,7 +23,7 @@ You need to have 10K lines of logs for each service in the application.
 
 ## 3. Enable Live logs for Training
 
-While the load is ongoing in the application, do the following steps to enable the live log mode and to copying the logs into AIMgr for training. 
+While the load is ongoing in the application, do the following steps to enable the live log mode and to copy the logs into AIMgr for training. 
 
 1. Goto the page `Data and tool connections` and select `Humio` 
 
@@ -58,7 +58,7 @@ After 25 minutes, live logs can be disbled.
 
 The load script would have been stopped after 20 minutes.
 
-## 6. Start Training
+## 6. Do Training
 
 1. Goto the page `AI Model Management`
 
