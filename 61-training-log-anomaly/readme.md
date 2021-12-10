@@ -1,80 +1,85 @@
-# Training - Log Amomaly Detection
+# Training - Log Amomaly
 
-This article explains about how to do Training of Log Amomaly Detection in Watson AIOps.
+This article explains about how to do Training of Log Amomaly in Watson AIOps.
 
 The article is based on the the following
 
-- RedHat OpenShift 4.6 on IBM Cloud (ROKS)
-- Watson AI-Ops 3.1.0
+- RedHat OpenShift 4.8 on IBM Cloud (ROKS)
+- Watson AI-Ops 3.2.0
 
-## Application
+## 1. Application
 
-Here is the application page looks like.
+We use iLender application. And assume that app is accessible via link http://1.1.1.1:31600
 
-And assume that app is accessible via link http://1.1.1.1:31600/productpage?u=normal
+Refer : [20-application-installation](../20-application-installation) to get app url
 
-<img src="images/1-app.png">
+![ilender](./images/image-00001.png)
 
-## Generate Load
+## 2. Generate Load
 
-The below script can be used for generating load.
+Refer : [21-application-load-generation](../21-application-load-generation) to generate load in the application
 
-Run this script and Generate load.
 
-```bash
-#!/bin/bash
+## 3. Load Live logs for Training
 
-while (true)
-do
-    ab -n 100 -c 5 http://1.1.1.1:31600/productpage?u=normal
-done
+While the load is ongoing in the application, do the following steps to enable the live log mode for copying the logs into AIMgr for training. 
 
-```
+1. Goto the page `Data and tool connections` and select `Humio` 
 
-## Load Live logs for Training
+![ilender](./images/image-00002.png)
 
-Enable the live logs for the training.
+2. Click on the humio connection `humio-connect-ilender`
 
-<img src="images/2-humio-on-1.png">
-<img src="images/2-humio-on-2.png">
-<img src="images/2-humio-on-3.png">
-<img src="images/2-humio-on-4.png">
+![ilender](./images/image-00003.png)
 
-Keep in this state for 10 minutes.
+3. Select the `Data flow` : `On`
 
-## Stop Live logs
+4. Select the `Mode` : `Live Data for Initial AI Training`
 
-After 10 minutes, live logs can be disbled.
+5. Click on the `Save`
 
-<img src="images/3-humio-off-1.png">
-<img src="images/3-humio-off-2.png">
-<img src="images/3-humio-off-3.png">
+![ilender](./images/image-00004.png)
 
-## Stop Load
 
-Click on Ctrl+C to stop load script.
+Now the live data would get copied to AIMgr.
 
-## Start Training
+## 4. Stop Live logs
 
-<img src="images/4-train-1.png">
-<img src="images/4-train-2.png">
-<img src="images/4-train-3.png">
+After 25 minutes, live logs can be disbled.
 
-Training is started.
+1. Select the `Data flow` : `Off`
 
-<img src="images/4-train-4.png">
+2. Click on the `Save`
 
-If you have this `Needs improvement` status then you need to load some more logs.
+![ilender](./images/image-00005.png)
 
-Need around 10K lines logs for each component/micro service of the app.
+## 5. Stop Load
 
-<img src="images/4-train-5.png">
+The load script would have been stopped after 20 minutes.
 
-Now the trianing status is `Good` and `Deployed`.
+## 6. Start Training
 
-<img src="images/4-train-6.png">
+1. Goto the page `AI Model Management`
 
-The trained version is `v8`.
+2. Click on `Manage` tab
 
-<img src="images/4-train-7.png">
+![ilender](./images/image-00006.png)
+
+3. Click on `log-anomaly-detection` link
+
+![ilender](./images/image-00007.png)
+
+4. Click on `Start Training` link
+
+![ilender](./images/image-00008.png)
+
+The training would start and go for ``20 minutes` to `1 hour` based on the data size.
+
+You will have `Training Complete` status once the training is done.
+
+5. Click on `Versions` tab
+
+You can see the version trained and deployed.
+
+![ilender](./images/image-00009.png)
 

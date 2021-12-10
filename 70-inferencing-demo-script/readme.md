@@ -10,7 +10,7 @@ Update the API_URL property with application url.
 API_URL=http://1.1.1.1:30600
 ```
 
-Refer : [20-application-installation](../20-application-installation) to get applicaiton url
+Refer : [20-application-installation](../20-application-installation) to get application url
 
 #### 2. Update API_URL_CREDIT_SCORE Url
 
