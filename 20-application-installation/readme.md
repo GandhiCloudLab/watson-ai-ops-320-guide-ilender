@@ -1,4 +1,4 @@
-# iLender App Deployment
+# Deploying iLender Application
 
 ## 1. Update Humio properties
 

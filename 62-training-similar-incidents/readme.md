@@ -1,6 +1,6 @@
 # Training - Similar Incidents
 
-This article explains about how to do Training of Similar Incidents in Watson AIOps.
+This article explains about how to do Similar Incidents training in Watson AIOps.
 
 The article is based on the the following
 
