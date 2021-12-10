@@ -6,13 +6,6 @@ The article is based on the the following
  - RedHat OpenShift 4.8 on IBM Cloud (ROKS)
  - Watson AIOps 3.2.0
 
-#### Note :
-
-We are migrating this document from WA 3.1 to WA 3.2. So this is a work in-progress document and frequent changes are expected.
-
-The pages with the text `Page Status : Final` at the bottom indicates that the migration is complete.
-
-
 ### 1. Watson AIOps 3.2 Installation
 
 <table>

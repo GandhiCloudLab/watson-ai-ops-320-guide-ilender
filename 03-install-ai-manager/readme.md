@@ -106,7 +106,3 @@ Do the following.
 1. Run the command `sh files/07-update-nginx-certificate.sh`
 
 2. Wait for 3 or 4 minutes for the nginx pod to be up.
-
-
-
-#### Page Status : Final

@@ -44,7 +44,3 @@ Click on `Add to Favourite` link
 <img src="images/image-00007.png">
 
 
-
-
-
-#### Page Status : Final

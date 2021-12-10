@@ -51,6 +51,3 @@ This documentation explains about the RedHat Openshift install on IBM Cloud (ROK
 <img src="images/image-00005.png">
 
 It would start creating a cluster for you. It may take 30 minutes to complete.
-
-
-#### Page Status : Final
