@@ -4,32 +4,55 @@ This article explains about how to setup Humio Integration in Watson AIOps.
 
 The article is based on the the following.
 
-- RedHat OpenShift 4.6 on IBM Cloud (ROKS)
-- Watson AI-Ops 3.1.0
+- RedHat OpenShift 4.8 on IBM Cloud (ROKS)
+- Watson AI-Ops 3.2.0
 
 1. Goto the page `Data and tool integrations`
 
-2. In the `Humio` card click on the `Add Integration` link
+2. Click on  `Add Integration`
 
-<img src="images/image-01.png">
+![Humio](./images/image-00001.png)
 
+3. In the `Humio` card click on the `Add Integration` link
 
-3. Enter the below field values
+![Humio](./images/image-00002.png)
 
+4. Click on `Connect` 
+
+![Humio](./images/image-00003.png)
+
+5. Enter the below field values
+
+- Name 
 - Name 
 - Humio sevice URL
 
     Sample value : http://1.1.1.1:8080/api/v1/repositories/sandbox/query
 
 - API Key of the Humio
-- Keep `Data flow` off
 
-4. Click on `Integrate` 
+6. Click on `Connect` 
 
-<img src="images/image-02.png">
-<img src="images/image-03.png">
-<img src="images/image-04.png">
+![Humio](./images/image-00004.png)
+![Humio](./images/image-00005.png)
 
-5. Integration is created.
+6. Click on `Test Connection` to check the connection with humio
 
-<img src="images/image-05.png">
+7. Click on `Next`
+
+![Humio](./images/image-00006.png)
+
+8. Enter the below field values
+
+- Dataflow : Off 
+- Mode: Historical ..
+- Start Date : yesterday date
+- End Date  : tommorrow date
+
+7. Click on `Done`
+
+![Humio](./images/image-00007.png)
+
+8. Humio connection created
+
+![Humio](./images/image-00008.png)
