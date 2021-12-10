@@ -146,7 +146,7 @@ Do the same for both the channels.
 
 ## 4. Integrate Slack in AI-Ops
 
-1. In the AI-Ops console, click on `Data and Tools integration` in home page.
+1. In the AI-Ops console, click on `Data and Tool connections` in home page.
 
 <img src="images/image-00034.png">
 
@@ -191,12 +191,12 @@ Do the same for both the channels.
 oc project cp4waiops
 ```
 
-3. There is a script file [update-nginx-v320.sh](./files/update-nginx-v320.sh)
+3. There is a script file [update-nginx.sh](./files/update-nginx.sh)
 
 Run the script.
 
 ```
-sh files/update-nginx-v320.sh
+sh files/update-nginx.sh
 ```
 
 This will update the nginx certificate.
