@@ -24,7 +24,7 @@ Here is the architecture that we are going to setup.
         <td width="20%">Reference</td>
     </tr>
     <tr>
-        <td>2.1</td>
+        <td>1.1</td>
         <td>Install Apache Benche </td>
         <td>To create load on the app</td>
         <td>
@@ -33,7 +33,7 @@ Here is the architecture that we are going to setup.
         </td>
     </tr>
     <tr>
-        <td>2.2</td>
+        <td>1.2</td>
         <td>Other installs </td>
         <td> Openshift CLI, Kubectl CLi, Curl, jq </td>
         <td>
@@ -51,7 +51,7 @@ Here is the architecture that we are going to setup.
         <td width="12%">Reference</td>
     </tr>
     <tr>
-        <td>1.1</td>
+        <td>2.1</td>
         <td>Watson AIOps 3.2.0 Installation and demo setup requirements</td>
         <td>
 
@@ -59,14 +59,14 @@ Here is the architecture that we are going to setup.
         </td>
     </tr>
         <tr>
-        <td>1.2</td>
+        <td>2.2</td>
         <td>Updating Global Pull Secrets before installing WAIOps 3.2</td>
         <td>
 [Details ...](./02-install-ai-manager-update-global-pull-secrets)
         </td>
     </tr>
     <tr>
-        <td>1.3</td>
+        <td>2.3</td>
         <td>Installing Watson AIOps AI-Manager on ROKS</td>
         <td>
 [Details ...](./03-install-ai-manager)
