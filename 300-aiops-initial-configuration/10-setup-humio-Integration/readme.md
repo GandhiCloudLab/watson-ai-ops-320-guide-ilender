@@ -24,14 +24,14 @@ The article is based on the the following.
 5. Enter the below field values
 
 - Name 
-- Name 
+- Description 
 - Humio sevice URL
 
     Sample value : http://1.1.1.1:8080/api/v1/repositories/sandbox/query
 
-- API Key of the Humio
+- API Key of the Humio (Should be Account key not the ingestion key)
 
-6. Click on `Connect` 
+6. Click on `Next` 
 
 ![Humio](./images/image-00004.png)
 ![Humio](./images/image-00005.png)
