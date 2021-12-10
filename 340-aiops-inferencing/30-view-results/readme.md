@@ -45,9 +45,9 @@ In application management also the story is shown.
 
 2. Click on `View Details` to see the details.
 
-![App](./images/03-app2.png)
-
 You can see the story and topology.
+
+![App](./images/03-app2.png)
 
 3. Click on `Hand icon` to see the alerts.
 
@@ -79,6 +79,6 @@ You can see the story and topology.
 
 ![Slack Story](./images/05-close1.png)
 
-2. Click on  `Submit` button in resolve the Slack Story
+2. Click on  `Submit` button to resolve the Slack Story
 
 ![Slack Story](./images/05-close2.png)

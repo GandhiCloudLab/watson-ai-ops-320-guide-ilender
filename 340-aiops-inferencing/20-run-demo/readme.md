@@ -43,7 +43,7 @@ You will see the menu options like this.
 
 Enter `1` to choose the menu option `1  -  Create Loan in iLender App`
 
-The output of the option 1 would be like the below.
+The output would be like the below. This will run for 4 minutes.
 
 ![Menu](./images/image4.png)
 
