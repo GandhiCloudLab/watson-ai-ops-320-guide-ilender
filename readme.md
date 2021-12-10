@@ -276,16 +276,16 @@ The pages with the text `Page Status : Final` at the bottom indicates that the m
         <td>Prepare demo script to introduce log anomaly and ingest events</td>
         <td>
 
-[Details](./40-demo-script-aimgr)
+[Details](./340-aiops-inferencing/40-demo-script-aimgr)
         </td>
     </tr>
     <tr>
         <td>9.2</td>
-        <td>Induce Error </td>
-        <td>Scale down ratings pod to 0 by executing the demo script</td>
+        <td>Run Demo </td>
+        <td>Run the demo script to induce error in credtiscore service based on the load</td>
         <td>
 
-[Details](./340-aiops-inferencing)
+[Details](./340-aiops-inferencing/20-run-demo)
         </td>
     </tr>
     <tr>
@@ -294,7 +294,7 @@ The pages with the text `Page Status : Final` at the bottom indicates that the m
         <td>Check the stories created by WA</td>
         <td>
 
-[Details](./340-aiops-inferencing/#user-content-stories-in-slack)
+[Details](./340-aiops-inferencing/30-view-results)
         </td>
     </tr>
 </table>
