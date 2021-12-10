@@ -1,4 +1,4 @@
-# Run Inferencing Demo
+# Run Demo (Inferencing)
 
 This article explains about how to run the Inferencing demo in Watson AIOps.
 
