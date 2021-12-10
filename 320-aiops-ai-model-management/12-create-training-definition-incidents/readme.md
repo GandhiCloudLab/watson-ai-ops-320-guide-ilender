@@ -4,30 +4,41 @@ This article explains about how to Create Training Definition for Similar Incide
 
 The article is based on the the following
 
-- RedHat OpenShift 4.6 on IBM Cloud (ROKS)
-- Watson AI-Ops 3.1.0
+- RedHat OpenShift 4.8 on IBM Cloud (ROKS)
+- Watson AI-Ops 3.2.0
 
 
-1. Goto the page `Data and Model Management`
+1. Goto the page `AI Model Management`
 
-2. Click on `Similar Incidents` card
+2. Click on `Configure` link in `Similar Incidents` card
 
-<img src="images/image-1.png">
+![ServiceNow](./images/image-00002.png)
 
-3. Click on `Create training definition`  to create a new training definition.
+3. Click on `Next`
 
-<img src="images/image-2.png">
+![ServiceNow](./images/image-00003.png)
 
-4. Enter value in `Name your training definition` text box. You can enter any value here for your reference.
+4. Enter the below field values
 
-5. Click on `Next`
+- Configuration Name 
+- Configuration Description 
 
-<img src="images/image-3.png">
+5. Click on `Next` 
 
-6. Review the values and Click on `Create` button.
+![ServiceNow](./images/image-00004.png)
 
-<img src="images/image-4.png">
+6. Click on `Next` 
 
-7. The training definition is created for the similar incidents.
+![ServiceNow](./images/image-00005.png)
 
-<img src="images/image-5.png">
+7. Click on `Done` 
+
+![ServiceNow](./images/image-00006.png)
+
+8. Similar incidents training definition is created
+
+![ServiceNow](./images/image-00007.png)
+
+9. Click on `Manage` tab.
+
+The Similar incidents  training definition is displayed.
