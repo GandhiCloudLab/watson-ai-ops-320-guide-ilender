@@ -7,7 +7,19 @@ The article is based on the the following
 - RedHat OpenShift 4.8 on IBM Cloud (ROKS)
 - Watson AI-Ops 3.2.0
 
-## 1. Enable Data flow in ServiceNow Integration
+## 1. Enable Data flow in Humio Integration
+
+1. Choose the `Humio` integration from the `Data and Tool integrations` page.
+
+![ServiceNow Integration](./images/image1.png)
+
+2. Enable the `Data flow` on.
+
+3. Select the option `Live data for Continious AI training and anomaly detection`.
+
+4. Save it.
+
+## 2. Enable Data flow in ServiceNow Integration
 
 1. Choose the `ServiceNow` integration from the `Data and Tool integrations` page.
 
