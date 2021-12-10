@@ -10,7 +10,7 @@ A RedHat Openshift on IBM Cloud (ROKS) with the below configuration needed to in
  - 5 Nodes with b3c.16x64 flavour. (CPU 16 core, Memory 64 GB)
  - Classic Infrastructure
 
- Here is a reference values and steps for [install](./80-provisioning-redhat-openshift-in-ibmcloud).
+ Here is a reference values and steps for [install](../80-provisioning-redhat-openshift-in-ibmcloud).
 
 ## 2. IKS Cluster on IBM Cloud
 
@@ -34,7 +34,7 @@ SRE would be indicated about the incident through ChatOps such as Slack or Team.
 
 Slack account is required for the WAIOps demo setup.
 
-The link [here](./32-integrations-slack) explains about account creation and integration with WAIOps.
+The link [here](../32-integrations-slack) explains about account creation and integration with WAIOps.
 
 ## 5. ServiceNow Account
 

@@ -33,7 +33,7 @@ The article is based on the the following
 
 ## 3. Run Demo Script
 
-The demo script is avialable [here](./10-demo-script). 
+The demo script is avialable [here](../70-inferencing-demo-script). 
 
 Run `sh 01-demo.sh` to start the demo.
 
@@ -53,4 +53,4 @@ As a result, the log anomaly is created and story will be created in the slack.
 
 ## Next Step
 
-By sucessful execution of the above demo step, the story would have been created and you can see them in the next section [72-inferencing-view-results](./72-inferencing-view-results).
+By sucessful execution of the above demo step, the story would have been created and you can see them in the next section [72-inferencing-view-results](../72-inferencing-view-results).
