@@ -35,15 +35,6 @@ sandy/sandy
 
 You can access the application using the `EXTERNAL-IP` from node and `NodePort` from svc.
 
-```
-http://< EXTERNAL-IP >: < NodePort >
-```
-
-ex:
-```
-http://1.1.1.1:30600
-```
-
 #### Get EXTERNAL-IP
 
 Run the below command to get `EXTERNAL-IP`
@@ -83,4 +74,19 @@ ilender-loan              ClusterIP   172.21.161.226   1.1.1.1   9090:30301/TCP 
 ilender-loanprocessor     ClusterIP   172.21.82.15     1.1.1.1   9090:30880/TCP   10d
 ilender-openbanking       ClusterIP   172.21.235.41    1.1.1.1   9090:31331/TCP   10d
 ilender-user              ClusterIP   172.21.43.214    1.1.1.1       9090:32427/TCP   10d
+```
+
+#### Get URLs
+
+The URL would be of this format.
+
+```
+http://< EXTERNAL-IP >: < NodePort >
+```
+
+Here are the 2 urls that we need.
+
+```
+App URL  (ilender-frontweb) : http://1.1.1.1:30600
+CreditScore Service URL  (ilender-creditscore) : http://1.1.1.1:30601
 ```
