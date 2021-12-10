@@ -1,17 +1,50 @@
-# Generate Load for BookInfo app
+# Generate Load for iLender App
 
-1. Open the file `01-create-load.sh`
+Here we use docker image to create a load. 
 
-2. Update the bookinfo app url `http://1.2.3.4` with the actual bookinfo app url of yours.
+### 1. Open the file script file
 
-3. Make sure that `apache bench` is installed.
+Open the file `files/01-create-load.sh`
 
-    https://httpd.apache.org/docs/2.4/programs/ab.html
+### 2. Update iLender URL
 
-4. Run the load script file 
+In the above script file, update the below property to point to iLender URL
 
 ```
-sh 01-create-load.sh
+export P_HOST=http://1.1.1.1:30600
 ```
 
-5. This load script runs for 5 to 15 minutes.
+### 3. Load duration
+
+By default the load is generated for 20 minutes. You can increase it by updating this property. 
+
+```
+export P_TIME_DURATION=20m
+```
+
+### 4.  Run the load
+
+Run the below script to start the load. It will run for the given time duration and stop automatically.
+
+```
+sh files/01-create-load.sh
+```
+
+### To Stop the load in-between
+
+To stop the load in the middle you can use the below commands.
+
+```
+Jeyas-MacBook-Pro:~ jeyagandhi$ docker ps
+CONTAINER ID   IMAGE                               COMMAND      CREATED          STATUS          PORTS     NAMES
+d396bd6c2ca8   gandigit/ilender-load-dev-2:0.0.1   "./run.sh"   23 seconds ago   Up 22 seconds             naughty_mendeleev
+```
+
+```
+Jeyas-MacBook-Pro:~ jeyagandhi$ docker stop d396bd6c2ca8
+d396bd6c2ca8
+```
+
+
+
+

@@ -63,7 +63,7 @@ NAME             STATUS   ROLES    AGE   VERSION       INTERNAL-IP      EXTERNAL
 
 #### Get NodePort
 
-Run the below command to get `NodePort`
+Run the below command to get `NodePort` and use the port from `ilender-frontweb` svc
 
 ```
 kubectl get svc
@@ -75,9 +75,9 @@ Output could be like this.
 Jeyas-MacBook-Pro:frontuiservice jeyagandhi$ kubectl get svc
 NAME                      TYPE           CLUSTER-IP       EXTERNAL-IP     PORT(S)          AGE
 ilender-bigbank           ClusterIP   172.21.165.179   1.1.1.1       9090:30598/TCP   10d
-ilender-creditscore       NodePort       172.21.55.156    <none>          9090:30501/TCP   10d
+ilender-creditscore       NodePort       172.21.55.156    <none>          9090:30601/TCP   10d
 ilender-customerprofile   ClusterIP   172.21.145.229   1.1.1.1   9090:32751/TCP   10d
-ilender-frontweb          NodePort       172.21.44.159    <none>          9090:30500/TCP   10d
+ilender-frontweb          NodePort       172.21.44.159    <none>          9090:30600/TCP   10d
 ilender-greatbank         ClusterIP   172.21.84.144    <pending>       9090:31622/TCP   10d
 ilender-loan              ClusterIP   172.21.161.226   1.1.1.1   9090:30301/TCP   10d
 ilender-loanprocessor     ClusterIP   172.21.82.15     1.1.1.1   9090:30880/TCP   10d
