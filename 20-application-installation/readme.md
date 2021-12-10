@@ -31,7 +31,7 @@ sam/sam
 sandy/sandy
 ```
 
-### 3.2 URL
+### 3.2 URLs
 
 You can access the application using the `EXTERNAL-IP` from node and `NodePort` from svc.
 
@@ -54,7 +54,7 @@ NAME             STATUS   ROLES    AGE   VERSION       INTERNAL-IP      EXTERNAL
 
 #### Get NodePort
 
-Run the below command to get `NodePort` and use the port from `ilender-frontweb` svc
+Run the below command to get `NodePort`of the svc
 
 ```
 kubectl get svc

@@ -1,24 +1,24 @@
 # Demo Script
 
-## Update config.sh
+Need to update few properties in the `config.sh`.
 
-#### Update Application Url
+#### 1. Update API_URL Property
 
-Update the application url
+Update the API_URL property with application url.
 
 ```
-APP_URL=http://1.1.1.1:31010/productpage?u=normal
+API_URL=http://1.1.1.1:30600
 ```
 
-Refer : [20-application-installation](../20-application-installation)
+Refer : [20-application-installation](../20-application-installation) to get applicaiton url
 
-#### Update Creditscore Url
+#### 2. Update API_URL_CREDIT_SCORE Url
 
-Update the creditscore service url
+Update the API_URL_CREDIT_SCORE property with creditscore service url.
 
 ```
 API_URL_CREDIT_SCORE=http://1.1.1.1:30601
 ```
 
-Refer : [20-application-installation](../20-application-installation)
+Refer : [20-application-installation](../20-application-installation) to get creditscore url
 
