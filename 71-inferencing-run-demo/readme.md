@@ -41,7 +41,7 @@ You will see the menu options like this.
 
 ![Menu](./images/image3.png)
 
-Enter `1` to choose the menu option `1  -  Create Loan in iLender App`
+2. 1. Enter `1` to choose the menu option `1  -  Create Loan in iLender App`
 
 The output would be like the below. This will run for 4 minutes.
 
@@ -49,7 +49,7 @@ The output would be like the below. This will run for 4 minutes.
 
 This demo option will introduce `out of memory error` in the creditscore service based on the increasing load. 
 
-As a result, the log anomaly is created and story will be created in the slack.  
+3. As a result, the log anomaly is created and story will be created in the slack.  
 
 ## Next Step
 
