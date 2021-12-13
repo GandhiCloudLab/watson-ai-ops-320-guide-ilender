@@ -57,6 +57,3 @@ Worker nodes to be be reloaded for the pull secrets to reflect.
 <img src="images/image4.png">
 
 
-
-
-#### Page Status : Final

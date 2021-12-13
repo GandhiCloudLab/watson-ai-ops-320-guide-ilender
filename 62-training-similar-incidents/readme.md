@@ -63,3 +63,11 @@ The training may take 2 to 5 minutes based on the data size.
 
 ![ServiceNow](./images/image-00006.png)
 
+Training versions
+
+![ServiceNow](./images/image-00007.png)
+
+Apps covered
+
+![ServiceNow](./images/image-00008.png)
+

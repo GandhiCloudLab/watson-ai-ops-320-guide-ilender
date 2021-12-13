@@ -83,7 +83,3 @@ https://c111.us-south.containers.cloud.ibm.com:32429
 9. Kubernetes connection is created successfully. This might have observer the resources found in the given namespace of the kubernetes cluster and create a Resource group
 
 <img src="images/image-00009.png">
-
-
-
-#### Page Status : Final

@@ -44,6 +44,3 @@ https://developer.servicenow.com/dev.do#!/guides/paris/developer-program/pdi-gui
 
 Watson AIOps can create Incidents in ServiceNow apart from slack story. Also it can train the existing incidents from ServiceNow for identifying the Similar Incidents and to choose the next best action, in case of an incident.
 
-
-
-#### Page Status : Final
