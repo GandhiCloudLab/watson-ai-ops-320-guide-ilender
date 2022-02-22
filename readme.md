@@ -112,7 +112,7 @@ Here is the architecture that we are going to setup.
         <td>OCP Cluster</td>
         <td>
 
-[Details ...]./81-installing-humio-on-openshift)</td>
+[Details ...](./81-installing-humio-on-openshift)</td>
     </tr>   
     <tr>
         <td>4.2 </td>
