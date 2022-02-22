@@ -20,15 +20,7 @@ A IBM Cloud Kubernetes Service, cluster on IBM cloud is needed to install iLende
  - 1 Node with b3c.8x32 flavour. (CPU 8 core, Memory 32 GB)
  - Classic Infrastructure
 
-## 3. Humio VM
-
-A VM with the below configuration is needed for Humio Logging System installation as part of the WAIOps demo setup.
-
- - OS : CentOS Linux 8
- - CPU : 16 Core
- - Memory : 64 GB
-
-## 4. Slack Account
+## 3. Slack Account
 
 SRE would be indicated about the incident through ChatOps such as Slack or Team. 
 

@@ -29,7 +29,10 @@ The article is based on the the following.
 
     Sample value : http://1.1.1.1:8080/api/v1/repositories/sandbox/query
 
+
 - API Key of the Humio (Should be Account key not the ingestion key)
+
+[Refer ...](../81-installing-humio-on-openshift)
 
 6. Click on `Next` 
 

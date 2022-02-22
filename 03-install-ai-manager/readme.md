@@ -19,6 +19,7 @@ In this section we create the following.
 - Create a custom project called `cp4waiops`
 - Create an Operator group called `cp4waiops-operator-group` in your custom project `cp4waiops`
 - Create the entitlement key pull secret called `ibm-entitlement-key`
+- Create the service account with entitlement key pull secret called `aiops-topology-service-account`
 - Create the catalog source called `ibm-operator-catalog`
 
 Do the following.
@@ -63,21 +64,13 @@ Note that we use `ibmc-file-gold-gid` storage class here.
   storageClassLargeBlock: ibmc-file-gold-gid
 ```
 
-## 5. Verify AI-Manager install completed
+## 5. Run the Post Install Activities 
 
-In this section, we verify the AI-Manager install is completed or not.
+In this section, we Run the post AIMgr install Activities.
 
-Do the following.
+1. Run the command `sh files/05-post-install.sh`
 
-1. Run the command `sh files/05-verify-ai-manager.sh`
-2. It should print the output like this.
-```
-NAME                  PHASE     LICENSE    STORAGECLASS         STORAGECLASSLARGEBLOCK   AGE
-ibm-cp-watson-aiops   Running   Accepted   ibmc-file-gold-gid   ibmc-file-gold-gid       8m1s
-```
-3. Repeat the command in step 1 until it is showing `Running` state.
-
-4. Wait for 30 minutes to 1 hour time to get the install completed. After 1hr, make sure that no pods are in error state.
+2. Wait for 30 minutes to 1 hour time to get the install completed. After 1hr, make sure that no pods are in error state. Also the logs of the above script give info about the install status.
 
 ## 6. Print the AIOps Console URL details
 
@@ -96,13 +89,3 @@ PASSWORD:
 ```
 3. You can use this to login into the WAIOps Console.
 
-
-## 7. Update NGINX Certificate
-
-In this section, update the nginx certificate.
-
-Do the following.
-
-1. Run the command `sh files/07-update-nginx-certificate.sh`
-
-2. Wait for 3 or 4 minutes for the nginx pod to be up.

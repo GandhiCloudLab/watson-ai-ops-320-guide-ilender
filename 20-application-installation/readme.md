@@ -9,6 +9,10 @@ Update `humioUrl` and `humioToken` properties in the file `./yaml/20-deployable-
   humioToken: 
 ```
 
+[Refer ...](../81-installing-humio-on-openshift)
+
+
+
 ## 2. Apply the yaml
 
 Apply the yaml in the Openshift or Kubernetes (OCP/IKS) clusters

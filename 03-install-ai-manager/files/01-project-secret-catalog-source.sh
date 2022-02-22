@@ -29,6 +29,19 @@ oc create secret docker-registry ibm-entitlement-key \
     --namespace=cp4waiops
 
 
+echo "4. Create the topology service account with the entitlement key pull secret ..."
+cat <<EOF | oc apply -n cp4waiops -f -
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: aiops-topology-service-account
+  labels:
+    managedByUser: 'true'
+imagePullSecrets:
+  - name: ibm-entitlement-key
+EOF
+
+
 echo "4. Ensure external traffic access to AI Manager"
 if [ $(oc get ingresscontroller default -n openshift-ingress-operator -o jsonpath='{.status.endpointPublishingStrategy.type}') = "HostNetwork" ]; then oc patch namespace default --type=json -p '[{"op":"add","path":"/metadata/labels","value":{"network.openshift.io/policy-group":"ingress"}}]'; fi
 

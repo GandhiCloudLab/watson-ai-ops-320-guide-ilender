@@ -7,6 +7,7 @@ The article is based on the the following
 - RedHat OpenShift 4.8 on IBM Cloud (ROKS)
 - Watson AI-Ops 3.2.0
 
+
 ## 1. Alert Viewer
 
 1. Alert Viewer shows all the alerts created for this probelm.

@@ -108,11 +108,11 @@ Here is the architecture that we are going to setup.
     <tr>
         <td>4.1</td>
         <td>Install Humio</td>
-        <td>Setup Humio on a single node (16 core, 64 GB)</td>
-        <td>Any VM</td>
+        <td>Setup Humio in the same OCP Cluster</td>
+        <td>OCP Cluster</td>
         <td>
 
-[Details ...](https://github.com/diimallya/humio-single-node)</td>
+[Details ...]./81-installing-humio-on-openshift)</td>
     </tr>   
     <tr>
         <td>4.2 </td>
