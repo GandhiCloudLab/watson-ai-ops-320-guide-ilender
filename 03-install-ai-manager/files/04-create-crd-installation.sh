@@ -1,15 +1,20 @@
 #!/usr/bin/env bash
 
-echo "Installing IBM Cloud Pak for Watson AIOps AI Manager - AI Manager started"
+function create_crd_installation () {
 
-echo "1. Install AI Manager ..."
+
+echo "-----------------------------------"
+echo "4. Installing IBM Cloud Pak for Watson AIOps AI Manager - Creating CRD Installation started"
+echo "-----------------------------------"
+
+echo "4.1. Install CRD Installation ..."
 
 cat << EOF | oc apply -f -
 apiVersion: orchestrator.aiops.ibm.com/v1alpha1
 kind: Installation
 metadata:
   name: ibm-cp-watson-aiops
-  namespace: cp4waiops
+  namespace: $NAMESPACE
 spec:
   imagePullSecret: ibm-entitlement-key
   license:
@@ -29,3 +34,5 @@ spec:
 EOF
 
 echo "Process completed .... "
+
+}

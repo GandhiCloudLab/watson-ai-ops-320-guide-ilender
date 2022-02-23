@@ -1,36 +1,42 @@
 #!/usr/bin/env bash
 
-echo "Installing IBM Cloud Pak for Watson AIOps AI Manager - started"
+function create_namespace_secret_catalog_source() {
 
-## Entitlement key
-ENTITLEMENT_KEY=ABCD
+echo "-----------------------------------"
+echo "1. Installing IBM Cloud Pak for Watson AIOps AI Manager - pre-install started"
+echo "-----------------------------------"
 
-echo "1. Create namespace cp4waiops ..."
-oc create namespace cp4waiops
+echo "1.1. Create namespace cp4waiops ..."
+oc create namespace $NAMESPACE
 
-echo "2. Create OperatorGroup ..."
+sleep 3
+
+echo "1.2. Create OperatorGroup ..."
 cat << EOF | oc apply -f -
 apiVersion: operators.coreos.com/v1
 kind: OperatorGroup
 metadata:
   name: cp4waiops-operator-group
-  namespace: cp4waiops
+  namespace: $NAMESPACE
 spec:
   targetNamespaces:
-    - cp4waiops
+    - $NAMESPACE
 EOF
 
+sleep 3
 
-echo "3. Create the entitlement key pull secret ..."
+
+echo "1.3. Create the entitlement key pull secret ..."
 oc create secret docker-registry ibm-entitlement-key \
     --docker-username=cp\
     --docker-password=$ENTITLEMENT_KEY \
     --docker-server=cp.icr.io \
-    --namespace=cp4waiops
+    --namespace=$NAMESPACE
 
+sleep 3
 
-echo "4. Create the topology service account with the entitlement key pull secret ..."
-cat <<EOF | oc apply -n cp4waiops -f -
+echo "1.4. Create the topology service account with the entitlement key pull secret ..."
+cat <<EOF | oc apply -n $NAMESPACE -f -
 apiVersion: v1
 kind: ServiceAccount
 metadata:
@@ -41,12 +47,14 @@ imagePullSecrets:
   - name: ibm-entitlement-key
 EOF
 
+sleep 3
 
-echo "4. Ensure external traffic access to AI Manager"
+
+echo "1.5. Ensure external traffic access to AI Manager"
 if [ $(oc get ingresscontroller default -n openshift-ingress-operator -o jsonpath='{.status.endpointPublishingStrategy.type}') = "HostNetwork" ]; then oc patch namespace default --type=json -p '[{"op":"add","path":"/metadata/labels","value":{"network.openshift.io/policy-group":"ingress"}}]'; fi
 
 
-echo "5. Create catalog source"
+echo "1.6. Create catalog source"
 cat << EOF | oc apply -f -
 apiVersion: operators.coreos.com/v1alpha1
 kind: CatalogSource
@@ -60,4 +68,8 @@ spec:
   image: icr.io/cpopen/ibm-operator-catalog:latest
 EOF
 
+sleep 5
+
 echo "Process completed .... "
+
+}

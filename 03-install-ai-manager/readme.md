@@ -4,15 +4,15 @@ This document explains about Installing Watson AIOps AI-Manager on ROKS.
 
 This document is based on the IBM Documentation https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.2.0?topic=manager-starter-installation
 
-## 1. Create Project, entitlement key secret and catalog source  
 
-In this section we create the following.
+### Installation Script 
 
-- Create a custom project called `cp4waiops`
-- Create an Operator group called `cp4waiops-operator-group` in your custom project `cp4waiops`
-- Create the entitlement key pull secret called `ibm-entitlement-key`
-- Create the service account with entitlement key pull secret called `aiops-topology-service-account`
-- Create the catalog source called `ibm-operator-catalog`
+Installation script is available in [files/10-install-ai-manager](./files/10-install-ai-manager.sh).
+
+
+### Update ENTITLEMENT_KEY  
+
+Need to update `ENTITLEMENT_KEY` variable in `files/00-config.sh`
 
 Do the following.
 
@@ -20,67 +20,53 @@ Do the following.
 
 <img src="images/image0.png">
 
-2. Replace the value of the `ENTITLEMENT_KEY` variable in `files/01-project-secret-catalog-source.sh`
-3. Run the command `sh files/01-project-secret-catalog-source.sh`
+2. Replace the value of the `ENTITLEMENT_KEY` variable in `files/00-config.sh`
 
-## 2. Install  AI-Manager operator
+### Install WAIOPS AI-Manager
 
-In this section, we install the AI-Manager operator by creating the `subscription` called `ibm-aiops-orchestrator` .
+Here are the steps to install AI-Manager
 
-Do the following.
+#### 1. Login into OpenShift
 
-1. Run the command `sh files/02-ai-manager-operator.sh`
-
-## 3. Verify  AI-Manager operator install completed
-
-In this section, we verify the AI-Manager operator install is completed or not.
-
-Do the following.
-
-1. Run the command `sh files/03-verify-ai-manager-operator.sh`
-2. It should print the output like this.
-```
-ibm-aiops-orchestrator-6c7cfc85b7-j9c92                           1/1     Running   0          6m27s
-```
-3. Repeat the command in step 1 until it is showing `Running` state.
-
-## 4. Install AI-Manager
-
-In this section, we install the AI-Manager by creating the `Installation` called `ibm-cp-watson-aiops` .
-
-Do the following.
-
-1. Run the command `sh files/04-ai-manager.sh`
-
-Note that we use `ibmc-file-gold-gid` storage class here.
+Login into OpenShift cluster where you want to install AI-Manager.
 
 ```
-  storageClass: ibmc-file-gold-gid
-  storageClassLargeBlock: ibmc-file-gold-gid
+oc login ......
 ```
 
-## 5. Run the Post Install Activities 
+#### 2. Goto the files folder
 
-In this section, we Run the post AIMgr install Activities.
+Run the below command
 
-1. Run the command `sh files/05-post-install.sh`
-
-2. Wait for 30 minutes to 1 hour time to get the install completed. After 1hr, make sure that no pods are in error state. Also the logs of the above script give info about the install status.
-
-## 6. Print the AIOps Console URL details
-
-In this section, we print the AIOps Console URL, user and password info.
-
-Do the following.
-
-1. Run the command `sh files/06-print-aiops-console-url-pwd.sh`
-2. It should print the output like this.
 ```
+cd 03-install-ai-manager/files
+```
+
+#### 3. Run the install script
+
+Run the below command to start the install
+
+```
+sh 10-install-ai-manager.sh
+```
+
+- It would take around 1hr to complete the istallation. 
+- Keep checking the logs for the status. 
+- The same script can be run again and again if the install stopped for any reason.
+
+#### 4. Output
+ 
+The installation would be completed and the output could be like this.
+
+```
+================================================================
 ====================================================================================
-URL : https://cpd-cp4waiops.abcd-efg.containers.appdomain.cloud
+URL : https://cpd-cp4waiops.aaaaaaaa.ams03.containers.appdomain.cloud
 USER: admin
 PASSWORD: 
 ====================================================================================
+================================================================
 ```
-3. You can use this to login into the WAIOps Console.
+
+You can use this to login into the WAIOps Console.
 

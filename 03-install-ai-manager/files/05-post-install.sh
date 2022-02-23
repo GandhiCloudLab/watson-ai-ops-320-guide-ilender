@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-NAMESPACE=cp4waiops
+source ./00-config.sh
 
 GLOBAL_POD_VERIFY_STATUS=false
 
@@ -41,7 +41,7 @@ function processAiopsanalyticsorchestrators() {
       sleep 4
 
       echo " Delete Pods starts with the name : aiops-ir-analytics"
-      oc get pods  -n  ${NAMESPACE} --no-headers=true | awk '/aiops-ir-analytics/{print $1}' | xargs  kubectl delete -n  ${NAMESPACE} pod
+      oc get pods  -n  ${NAMESPACE} --no-headers=true | awk '/aiops-ir-analytics/{print $1}' | xargs  oc delete -n  ${NAMESPACE} pod
   else
       echo "Resource Not found (aiopsanalyticsorchestrators)"
   fi
@@ -59,7 +59,7 @@ function verifyAIOpsPodsCount() {
   LOOP_COUNT=0
   
   while [[ $POD_COUNT -lt $MIN_POD_COUNT ]] && [[ $LOOP_COUNT -lt $MAX_WAIT_MINUTES ]]; do
-    POD_COUNT=$(kubectl get pods -n $NAMESPACE | wc -l ) 
+    POD_COUNT=$(oc get pods -n $NAMESPACE | wc -l ) 
     echo "WAIOps Pod Count in $LOOP_COUNT minutes : $POD_COUNT"
     LOOP_COUNT=$((LOOP_COUNT + 1))
     sleep 60
