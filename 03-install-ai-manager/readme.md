@@ -1,6 +1,6 @@
 # Installing Watson AIOps AI-Manager on ROKS
 
-This document explains about Installing Watson AIOps AI-Manager on ROKS.
+This document explains about Installing IBM Watson AIOps AI Manager 3.2.0 on ROKS.
 
 This document is based on the IBM Documentation https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.2.0?topic=manager-starter-installation
 
