@@ -288,3 +288,32 @@ Here is the architecture that we are going to setup.
         </td>
     </tr>
 </table>
+
+
+### 10. Instana Events
+
+<table>
+    <tr>
+        <td width="4%">S.No</td>
+        <td width="28%">Title</td>
+        <td width="48%">Description</td>
+        <td width="20%">Reference</td>
+    </tr>
+    <tr>
+        <td>10.1</td>
+        <td>Instana Event </td>
+        <td>How to send instana events to AI-Manager</td>
+        <td>
+
+[Details](./82-sending-instana-events-to-aimgr)
+        </td>
+    </tr>
+    <tr>
+        <td>10.2</td>
+        <td>Instana Alerts and Alert Channel </td>
+        <td>How to create Event, Alert and Alert Channel in Instana</td>
+        <td>
+[Details](https://github.com/ibm-gsi-ecosystem/watson-ai-ops-instana)
+        </td>
+    </tr>
+</table>
