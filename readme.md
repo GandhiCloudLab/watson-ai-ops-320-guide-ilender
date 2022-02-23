@@ -68,28 +68,8 @@ Here is the architecture that we are going to setup.
 
 </table>
 
+### 3. Setup Operational Systems
 
-### 3. Setup Managed Environment
-
-<table>
-    <tr>
-        <td width="4%">S.No</td>
-        <td width="28%">Title</td>
-        <td width="40%">Description</td>
-        <td width="20%">Reference</td>
-    </tr>
-    <tr>
-        <td>3.1</td>
-        <td>Install iLender app</td>
-        <td>Install iLender app on the managed environment</td>
-        <td>
-
-[Details](./20-application-installation)</td>
-    </tr>
-</table>
-
-
-### 4. Setup Operational Systems
 <table>
     <tr>
         <td width="4%">S.No</td>
@@ -99,7 +79,7 @@ Here is the architecture that we are going to setup.
         <td width="20%">Reference</td>
     </tr>
     <tr>
-        <td>4.1</td>
+        <td>3.1</td>
         <td>Install Humio</td>
         <td>Setup Humio in the same OCP Cluster</td>
         <td>OCP Cluster</td>
@@ -108,21 +88,21 @@ Here is the architecture that we are going to setup.
 [Details ...](./81-installing-humio-on-openshift)</td>
     </tr>   
     <tr>
-        <td>4.2 </td>
+        <td>3.2 </td>
         <td>Create Slack acccount</td>
         <td>Setup free slack account and create workspace, channels and slack app</td>
         <td>Slack</td>
         <td>[Details](./32-integrations-slack)</td>
     </tr>   
     <tr>
-        <td>4.3 </td>
+        <td>3.3 </td>
         <td>Create ServiceNow Instance</td>
         <td></td>
         <td>ServiceNow</td>
         <td>[Details ...](https://developer.servicenow.com/dev.do)</td>
     </tr>
     <tr>
-        <td>4.4 </td>
+        <td>3.4 </td>
         <td>Create Sample Incidents in Service now</td>
         <td></td>
         <td>ServiceNow</td>
@@ -130,7 +110,29 @@ Here is the architecture that we are going to setup.
     </tr>
 </table>
 
+
+### 4. Setup Managed Environment
+
+<table>
+    <tr>
+        <td width="4%">S.No</td>
+        <td width="28%">Title</td>
+        <td width="40%">Description</td>
+        <td width="20%">Reference</td>
+    </tr>
+    <tr>
+        <td>4.1</td>
+        <td>Install iLender app</td>
+        <td>Install iLender app on the managed environment</td>
+        <td>
+
+[Details](./20-application-installation)</td>
+    </tr>
+</table>
+
+
 ### 5. Setup Initial Configurations
+
 <table>
     <tr>
         <td width="4%">S.No</td>
