@@ -59,7 +59,7 @@ Here is the architecture that we are going to setup.
         </td>
     </tr>
     <tr>
-        <td>2.3</td>
+        <td>2.2</td>
         <td>Installing Watson AIOps AI-Manager on ROKS</td>
         <td>
 [Details ...](./03-install-ai-manager)
