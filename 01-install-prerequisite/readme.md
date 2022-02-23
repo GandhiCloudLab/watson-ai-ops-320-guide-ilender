@@ -28,7 +28,7 @@ Slack account is required for the WAIOps demo setup.
 
 The link [here](../32-integrations-slack) explains about account creation and integration with WAIOps.
 
-## 5. ServiceNow Account
+## 4. ServiceNow Account
 
 A ServiceNow account is required or atleast Developer instance to be created using the below URL as part of the WAIOps demo setup..
 

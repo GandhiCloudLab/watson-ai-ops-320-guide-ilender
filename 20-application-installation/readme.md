@@ -9,8 +9,7 @@ Update `humioUrl` and `humioToken` properties in the file `./yaml/20-deployable-
   humioToken: 
 ```
 
-[Refer ...](../81-installing-humio-on-openshift)
-
+[Refer ... Installing Humio on RedHat Openshift](../81-installing-humio-on-openshift)
 
 
 ## 2. Apply the yaml

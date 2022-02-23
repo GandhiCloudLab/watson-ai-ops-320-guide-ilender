@@ -58,13 +58,6 @@ Here is the architecture that we are going to setup.
 [Details ...](./01-install-prerequisite)
         </td>
     </tr>
-        <tr>
-        <td>2.2</td>
-        <td>Updating Global Pull Secrets before installing WAIOps 3.2</td>
-        <td>
-[Details ...](./02-install-ai-manager-update-global-pull-secrets)
-        </td>
-    </tr>
     <tr>
         <td>2.3</td>
         <td>Installing Watson AIOps AI-Manager on ROKS</td>
