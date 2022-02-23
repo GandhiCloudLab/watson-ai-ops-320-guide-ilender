@@ -12,10 +12,13 @@ Installation script is available in [files/10-install-ai-manager](./files/10-ins
 
 ### 2, Update ENTITLEMENT_KEY  
 
-Need to update `ENTITLEMENT_KEY` variable in `files/00-config.sh`
+1. Get `IBM entitlement key` from https://myibm.ibm.com/products-services/containerlibrary
+
+<img src="images/image0.png">
+
+2. Replace the value of the `ENTITLEMENT_KEY` variable in `files/00-config.sh`
 
 ```
-
 #!/bin/bash
 
 ## Entitlement key
@@ -23,17 +26,7 @@ export ENTITLEMENT_KEY=ABCD
 
 ## Namespace where WAIOps to be isnstalled.
 export NAMESPACE=cp4waiops
-
 ```
-
-
-Do the following.
-
-1. Get `IBM entitlement key` from https://myibm.ibm.com/products-services/containerlibrary
-
-<img src="images/image0.png">
-
-2. Replace the value of the `ENTITLEMENT_KEY` variable in `files/00-config.sh`
 
 ### 3. Install WAIOPS AI-Manager
 
