@@ -27,7 +27,10 @@ Here is the architecture that we are going to setup.
         <td>1.1</td>
         <td>Install Apache Benche </td>
         <td>To create load on the app</td>
-        <td>[Details ...](https://httpd.apache.org/download.cgi)</td>
+        <td>
+
+[Details ...](https://httpd.apache.org/download.cgi)
+        </td>
     </tr>
     <tr>
         <td>1.2</td>
@@ -121,7 +124,9 @@ Here is the architecture that we are going to setup.
         <td>4.1</td>
         <td>Install iLender app</td>
         <td>Install iLender app on the managed environment</td>
-        <td>[Details](./20-application-installation)</td>
+        <td>
+
+[Details](./20-application-installation)</td>
     </tr>
 </table>
 
@@ -156,13 +161,17 @@ Here is the architecture that we are going to setup.
         <td>5.3</td>
         <td>Setup Servicenow Integration</td>
         <td>&nbsp;</td>
-        <td>[Details](./31-integrations-servicenow)</td>
+        <td>
+[Details](./31-integrations-servicenow)
+        </td>
     </tr>
     <tr>
         <td>5.4</td>
         <td>Setup Kubernetes Integration</td>
         <td>&nbsp;</td>
-        <td>[Details](./33-integrations-kubernetes-observer)</td>
+        <td>
+[Details](./33-integrations-kubernetes-observer)
+        </td>
     </tr>    
 </table>
 
@@ -177,7 +186,9 @@ Here is the architecture that we are going to setup.
     <tr>
         <td>6.1</td>
         <td>Create Application from Resource Groups </td>
-        <td>[Details](./40-application-management)</td>
+        <td>
+
+[Details](./40-application-management)</td>
     </tr>
 </table>
 
@@ -192,12 +203,18 @@ Here is the architecture that we are going to setup.
     <tr>
         <td>7.1</td>
         <td>Create Training Definition for Log Anomaly Detection </td>
-        <td>[Details](./50-ai-model-log-anomaly)          </td>
+        <td>
+
+[Details](./50-ai-model-log-anomaly)  
+        </td>
     </tr>
     <tr>
         <td>7.2</td>
         <td>Create Training Definition for Similar Incidents </td>
-        <td>[Details](./51-ai-model-similar-incidents)          </td>
+        <td>
+
+[Details](./51-ai-model-similar-incidents)  
+        </td>
     </tr>    
 </table>
 
@@ -214,7 +231,10 @@ Here is the architecture that we are going to setup.
         <td>8.1</td>
         <td>Generate Load</td>
         <td>Generate the load for the app</td>
-        <td>[Details](./21-application-load-generation)</td>
+        <td>
+
+[Details](./21-application-load-generation)
+        </td>
     </tr>    
     <tr>
         <td>8.2</td>
