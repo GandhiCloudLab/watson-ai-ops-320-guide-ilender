@@ -32,6 +32,8 @@ Update the below property to point to NOI Kafka topic that is created in AIMgr.
 NOI_KAFKA_TOPIC=cp4waiops-cartridge-alerts-noi-7buu27a3
 ```
 
+<img src="images/kafka.png">
+
 #### 3. Severity Filter property (Optional)
 
 This property helps to process only the instana events that contains severity in the given range.
